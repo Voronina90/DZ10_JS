@@ -1,0 +1,51 @@
+const data = `[
+    {
+      "idCake": "110",
+      "strCake": "Napoleon",
+      "strTags": null,
+      "strVideo": null,
+      "strView": "Cake",
+      "strInstructions": "Napoleon - cake with butter or custard.",
+      "strInstructionsZH-HANS": null,
+      "strInstructionsZH-HANT": null,
+      "strCakeThumb": "https://www.interactive-english.ru/imagesforsite/recepti/tort/napoleon.jpg",
+      "strIngredient1": "4 cups flour",
+      "strIngredient2": "1 cup beer",
+      "strIngredient3": "200g butter",
+      "strIngredient4": "1 teaspoon baking powder",
+      "strIngredient5": "400g custard"
+    },
+    {
+        "idCake": "118",
+        "strCake": "Brownie",
+        "strTags": null,
+        "strVideo": null,
+        "strView": "Cake",
+        "strInstructions": "A chocolate cake with a characteristic brown color (English brown - “brown”; hence the name), traditional for American cuisine. Depending on the recipe, it may have the consistency of a cake, muffin or cookie. Cut into flat rectangular pieces.",
+        "strInstructionsZH-HANS": null,
+        "strInstructionsZH-HANT": null,
+        "strCakeThumb": "https://www.interactive-english.ru/imagesforsite/recepti/brownie/main.jpg",
+        "strIngredient1": "100g dark chocolate",
+        "strIngredient2": "180g butter",
+        "strIngredient3": "1 glass sugar",
+        "strIngredient4": "4 eggs",
+        "strIngredient5": "100g flour",
+        "strIngredient6": "100g walnuts"
+    },
+    {
+        "idCake": "116",
+        "strCake": "Tiramisu",
+        "strTags": null,
+        "strVideo": null,
+        "strView": "Cake",
+        "strInstructions": "An Italian layered dessert that includes mascarpone cheese, coffee (usually espresso), chicken eggs, sugar, and savoiardi biscuits. As a rule, the dessert is powdered with cocoa powder. A variation with the addition of walnuts is possible.",
+        "strInstructionsZH-HANS": null,
+        "strInstructionsZH-HANT": null,
+        "strCakeThumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Classic_Italian_Tiramisu-3_%2829989504485%29.jpg/274px-Classic_Italian_Tiramisu-3_%2829989504485%29.jpg",
+        "strIngredient1": "mascarpone cheese - 500 grams",
+        "strIngredient2": "6 eggs",
+        "strIngredient3": "cookies 300 grams", "strIngredient4": "granulated sugar 100 grams", "strIngredient5": "cognac 20 milliliters", 
+        "strIngredient6": "espresso coffee 150 milliliters", 
+        "strIngredient7": "unsweetened cocoa powder 3 tablespoons"
+    }
+]`
