@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cakes</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="cake__box"></div>
+    <script src="data.js"></script>
+    <script>
+        const cakeBox = document.querySelector('.cake__box');
+        const dataCakeDb = JSON.parse(data);
+        console.log(dataCakeDb);
+
+        dataCakeDb.forEach(element => {
+            const cakes = document.createElement('div');
+            cakes.classList.add('cakes');
+
+            const drinkName = document.createElement('h2');
+            drinkName.classList.add('cake__name');
+            drinkName.textContent = element.strCake;
+
+            const img = document.createElement('img');
+            img.classList.add('cake__img');
+            img.setAttribute('alt', 'Napoleon');
+            img.src = element.strCakeThumb;
+
+            const cakeDsc = document.createElement('div');
+            cakeDsc.classList.add('cake__dsc');
+
+            const cakeview = document.createElement('p');
+            cakeview.classList.add('cake__view');
+            cakeview.textContent = element.strView;
+
+            const cakeInstr = document.createElement('p');
+            cakeInstr.classList.add('cake__instr');
+            cakeInstr.textContent = element.strInstructions;
+
+            const cakeIngrBlock = document.createElement('div');
+            cakeIngrBlock.classList.add('cake__ingrblock');
+            cakeIngrBlock.textContent = 'Ingredients:';
+
+            const cakeIngr1 = document.createElement('p');
+            cakeIngr1.classList.add('cake__ingr');
+            cakeIngr1.textContent = element.strIngredient1;
+
+            const cakeIngr2 = document.createElement('p');
+            cakeIngr2.classList.add('cake__ingr');
+            cakeIngr2.textContent = element.strIngredient2;
+
+            const cakeIngr3 = document.createElement('p');
+            cakeIngr3.classList.add('cake__ingr');
+            cakeIngr3.textContent = element.strIngredient3;
+
+            const cakeIngr4 = document.createElement('p');
+            cakeIngr4.classList.add('cake__ingr');
+            cakeIngr4.textContent = element.strIngredient4;
+
+            const cakeIngr5 = document.createElement('p');
+            cakeIngr5.classList.add('cake__ingr');
+            cakeIngr5.textContent = element.strIngredient5;
+
+            const cakeIngr6 = document.createElement('p');
+            cakeIngr6.classList.add('cake__ingr');
+            cakeIngr6.textContent = element.strIngredient6;
+
+            const cakeIngr7 = document.createElement('p');
+            cakeIngr7.classList.add('cake__ingr');
+            cakeIngr7.textContent = element.strIngredient7;
+
+            cakeBox.appendChild(cakes);
+            cakes.appendChild(drinkName);
+            cakes.appendChild(img);
+            cakes.appendChild(cakeDsc);
+            cakeDsc.appendChild(cakeview);
+            cakeDsc.appendChild(cakeInstr);
+            cakeDsc.appendChild(cakeIngrBlock);
+            cakeIngrBlock.appendChild(cakeIngr1);
+            cakeIngrBlock.appendChild(cakeIngr2);
+            cakeIngrBlock.appendChild(cakeIngr3);
+            cakeIngrBlock.appendChild(cakeIngr4);
+            cakeIngrBlock.appendChild(cakeIngr5);
+            cakeIngrBlock.appendChild(cakeIngr6);
+            cakeIngrBlock.appendChild(cakeIngr7);
+        });
+    </script>
+</body>
