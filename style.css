@@ -1,0 +1,74 @@
+body {
+    background-color: rgb(130, 112, 126);
+}
+
+.cake__box {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.cakes {
+    border: 2px solid black;
+    padding: 12px;
+    width: 30%;
+    background-color: rgb(255, 255, 255);
+}
+
+.cake__img {
+    display: flex;
+    margin: auto;
+    width: 80%;
+}
+
+.cake__name {
+    text-align: center;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 36px;
+}
+
+.cake__view {
+    text-align: left;
+    font-family: Roboto;
+    font-style: italic;
+    font-weight: 800;
+    font-size: 15px;
+}
+
+.cake__instr {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.cake__ingrblock {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.cake__ingr {
+    text-align: left;
+    font-family: Roboto;
+    font-style: italic;
+    font-weight: 800;
+    font-size: 15px;
+}
+
+@media (max-width: 767px) {
+    .cake__name {
+        text-align: center;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 26px;
+    }
+    .cakes {
+        width: 45%;
+    }
+}
